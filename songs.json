@@ -96,7 +96,7 @@
             },
             {
                 "name": "Pre-Chorus",
-                "progression": "4 | 5 1\n4 | 5"
+                "progression": "4 | 5 - 1\n4 | 5"
             },
             {
                 "name": "Chorus",
@@ -104,7 +104,7 @@
             },
             {
                 "name": "Bridge",
-                "progression": "5 | 4 1"
+                "progression": "5 | 4 - 1"
             }
         ],
         "singerKeys": [
@@ -126,7 +126,7 @@
             },
             {
                 "name": "Verse",
-                "progression": "1 | 4 1\n5 | 4 | 1 | 1"
+                "progression": "1 | 4 * 1\n5 | 4 | 1 | 1"
             },
             {
                 "name": "Pre-Chorus",
