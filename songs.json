@@ -1,5 +1,22 @@
 [
     {
+        "title": "Make Room",
+        "artist": "Community Music",
+        "key": "G",
+        "sections": [
+            {
+                "name": "Whole Song",
+                "progression": "1 | 5 | 2m | 4"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "G"
+            }
+        ]
+    },
+    {
         "title": "Always on Time",
         "artist": "Elevation Worship",
         "key": "F",
@@ -10,7 +27,7 @@
             },
             {
                 "name": "Pre-Chorus",
-                "progression": "5 1 | 4"
+                "progression": "5 - 1 | 4"
             },
             {
                 "name": "Chorus",

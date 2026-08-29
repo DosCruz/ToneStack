@@ -107,20 +107,22 @@ function displaySongList() {
 
     songList.innerHTML = "";
 
-    songs.forEach((song, index) => {
-        const songElement = document.createElement("div");
+    songs
+        .sort((a, b) => a.title.localeCompare(b.title))
+        .forEach((song, index) => {
+            const songElement = document.createElement("div");
 
-        songElement.innerHTML = `
-            <h2>${song.title}</h2>
-            <p>${song.artist}</p>
-        `;
+            songElement.innerHTML = `
+                <h2>${song.title}</h2>
+                <p>${song.artist}</p>
+            `;
 
-        songElement.addEventListener("click", () => {
-            showSong(index);
+            songElement.addEventListener("click", () => {
+                showSong(index);
+            });
+
+            songList.appendChild(songElement);
         });
-
-        songList.appendChild(songElement);
-    });
 }
 
 function showSong(index) {
