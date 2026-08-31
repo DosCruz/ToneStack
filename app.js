@@ -97,17 +97,19 @@ async function loadSongs() {
     const response = await fetch("songs.json");
     songs = await response.json();
 
+    songs.sort((a, b) => a.title.localeCompare(b.title));
+
     displaySongList();
 }
 
 loadSongs();
 
-function displaySongList() {
+function displaySongList(songArray = songs) {
     const songList = document.getElementById("song-list");
 
     songList.innerHTML = "";
 
-    songs
+    songArray
         .sort((a, b) => a.title.localeCompare(b.title))
         .forEach((song, index) => {
             const songElement = document.createElement("div");
@@ -224,4 +226,19 @@ displayToggle.addEventListener("click", () => {
         : "Chords";
 
     displaySections(currentSong);
+});
+
+searchInput.addEventListener("input", () => {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+
+    const songList = document.getElementById("song-list");
+
+    const filteredSongs = songs.filter(song => {
+        return (
+            song.title.toLowerCase().includes(searchTerm) ||
+            song.artist.toLowerCase().includes(searchTerm)
+        );
+    });
+
+    displaySongList(filteredSongs);
 });
