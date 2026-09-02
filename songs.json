@@ -197,7 +197,7 @@
     {
         "title": "Ako'y Nananabik",
         "artist": "Spring Worship",
-        "Key": "E",
+        "key": "E",
         "sections": [
             {
                 "name": "Intro",
@@ -209,7 +209,7 @@
             },
             {
                 "name": "Chorus",
-                "progression": "4 | 3m-6m | 2m | 1\n4 | 3m-6m | 2m-5 | 1"
+                "progression": "4 | 3m - 6m | 2m | 1\n4 | 3m - 6m | 2m - 5 | 1"
             },
             {
                 "name": "Instrumental",
@@ -230,7 +230,7 @@
     {
         "title": "Break Every Chain",
         "artist": "Jesus Culture",
-        "Key": "A",
+        "key": "A",
         "sections": [
             {
                 "name": "Whole Song",
@@ -278,6 +278,139 @@
             {
                 "name": "Chloe",
                 "key": "F"
+            }
+        ]
+    },
+    {
+        "title": "Araw-araw",
+        "artist": "MJ Flores",
+        "key": "D",
+        "sections": [
+            {
+                "name": "Intro",
+                "progression": "1 | 1 | 2m | 4"
+            },
+            {
+                "name": "Verse",
+                "progression": "1 | 1 | 4 | 1"
+            },
+            {
+                "name": "Pre-Chorus",
+                "progression": "6m | 5 | 1/3 | 4\n6m | 5 | 2m | 4"
+            },
+            {
+                "name": "Chorus",
+                "progression": "1 | 1 | 4 | 1"
+            },
+            {
+                "name": "Bridge Outro",
+                "progression": "1 | 1 | 2m | 4\n6m | 5 | 2m | 1 (last line)"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name":"Original Key",
+                "key": "D"
+            },
+            {
+                "name": "Yanau",
+                "key": "G"
+            }
+        ]
+    },
+    {
+        "title": "I Need You More",
+        "artist": "Kim Walker-Smith",
+        "key": "D",
+        "sections": [
+            {
+                "name": "Intro",
+                "progression": "1/3 | 4 | 1/3 | 4"
+            },
+            {
+                "name": "Chorus",
+                "progression": "1 | 2m | 5 | 4 - 1\n6m | 4 - 1/3 - 2m | 1 - 5 | 1"
+            },
+            {
+                "name": "Verse",
+                "progression": "4 | 5 - 6m\n4 | 2m - 1\n4 | 5 - 6m\n2m - 1/3 | 5"
+            },
+            {
+                "name": "Bridge",
+                "progression": "4 | 3 | 2m | 5"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name":"Original Key",
+                "key": "D"
+            }
+        ]
+
+    },
+    {
+        "title": "I Speak Jesus",
+        "artist": "Charity Gayle",
+        "key": "E",
+        "sections": [
+            {
+                "name": "Intro Verse",
+                "progression": "1 | 6m | 4 | ( 1 )"
+            },
+            {
+                "name": "Chorus",
+                "progression": "5 | 4 | 1 | 1"
+            },
+            {
+                "name": "Bridge",
+                "progression": "1 | 6m | 4 | 1"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "E"
+            },
+            {
+                "name": "Chloe",
+                "key": "D#"
+            }
+        ]
+    },
+    {
+        "title": "I Thank God",
+        "artist": "Maverick City Music, UPPERROOM",
+        "key": "C#",
+        "sections": [
+            {
+                "name": "Intro",
+                "progression": "1"
+            },
+            {
+                "name": "Verse",
+                "progression": "1 | 1 | 4 | 1"
+            },
+            {
+                "name": "Pre-Chorus",
+                "progression": "5 | 6m | 4 | 1\n5 | 1/3 | 4 | 4"
+            },
+            {
+                "name": "Chorus",
+                "progression": "1 | 2m | 1/3 | 4\n6m | 4"
+            },
+            {
+                "name": "Bridge",
+                "progression": "1 | 1 | 1 | 1\n5 | 6m | 4 | 1\n5 | 6m | 4"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name":"Original Key",
+                "key": "C#"
+            },
+            {
+                "name": "Chine",
+                "key": "D#"
             }
         ]
     }
