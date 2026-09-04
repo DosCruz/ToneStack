@@ -92,6 +92,20 @@ h4 {
     align-items: center;
 }
 
+#song-controls > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#song-controls button {
+    min-width: 70px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #singer-keys {
     margin-top: 50px;
     padding-bottom: 20px;
@@ -106,4 +120,8 @@ h4 {
     font: inherit;
     color: inherit;
     background: none;
+}
+
+hr {
+    margin: 20px 0px;
 }

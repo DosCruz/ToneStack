@@ -93,6 +93,9 @@ let displayMode = "numbers";
 let currentSong = null;
 let currentKey = null;
 
+let starredSongs = JSON.parse(localStorage.getItem("starredSongs")) || [];
+let savedKeys = JSON.parse(localStorage.getItem("savedKeys")) || {};
+
 async function loadSongs() {
     const response = await fetch("songs.json");
     songs = await response.json();
@@ -109,29 +112,90 @@ function displaySongList(songArray = songs) {
 
     songList.innerHTML = "";
 
-    songArray
-        .sort((a, b) => a.title.localeCompare(b.title))
-        .forEach((song, index) => {
-            const songElement = document.createElement("div");
+    const pinnedSongs = [];
+    const unpinnedSongs = [];
 
-            songElement.innerHTML = `
-                <h2>${song.title}</h2>
-                <p>${song.artist}</p>
-            `;
+    songArray.forEach(song => {
+        if (starredSongs.includes(song.title)) {
+            pinnedSongs.push(song);
+        } else {
+            unpinnedSongs.push(song);
+        }
+    });
 
-            songElement.addEventListener("click", () => {
-                showSong(index);
-            });
+    // Pinned songs keep the order they were pinned
+    pinnedSongs.sort((a, b) => {
+        return starredSongs.indexOf(a.title) - starredSongs.indexOf(b.title);
+    });
 
-            songList.appendChild(songElement);
+    // Unpinned songs stay alphabetical
+    unpinnedSongs.sort((a, b) => {
+        return a.title.localeCompare(b.title);
+    });
+
+    // Display pinned songs
+    pinnedSongs.forEach(song => {
+        const songElement = document.createElement("div");
+
+        songElement.innerHTML = `
+            <h2>${song.title}</h2>
+            <p>${song.artist}</p>
+        `;
+
+        songElement.addEventListener("click", () => {
+            showSong(song);
         });
+
+        songList.appendChild(songElement);
+    });
+
+    // Add divider only if there are pinned AND unpinned songs
+    if (pinnedSongs.length > 0 && unpinnedSongs.length > 0) {
+        const divider = document.createElement("hr");
+        songList.appendChild(divider);
+    }
+
+    // Display unpinned songs
+    unpinnedSongs.forEach(song => {
+        const songElement = document.createElement("div");
+
+        songElement.innerHTML = `
+            <h2>${song.title}</h2>
+            <p>${song.artist}</p>
+        `;
+
+        songElement.addEventListener("click", () => {
+            showSong(song);
+        });
+
+        songList.appendChild(songElement);
+    });
 }
 
-function showSong(index) {
-    const song = songs[index];
+function toggleStar(songTitle) {
+    const index = starredSongs.indexOf(songTitle);
 
+    if (index === -1) {
+        // Add to the end of the starred list
+        starredSongs.push(songTitle);
+    } else {
+        // Remove from starred list
+        starredSongs.splice(index, 1);
+    }
+
+    localStorage.setItem("starredSongs", JSON.stringify(starredSongs));
+
+    displaySongList();
+}
+
+function showSong(song) {
     currentSong = song;
-    currentKey = song.key;
+    updatePinButton();
+
+    // Use the saved key if this song has one.
+    // Otherwise, use the original key from songs.json.
+    currentKey = savedKeys[song.title] || song.key;
+
     displayMode = "numbers";
 
     document.getElementById("key-selector").value = currentKey;
@@ -165,6 +229,10 @@ function displaySingerKeys(song) {
         button.addEventListener("click", () => {
             currentKey = singer.key;
 
+            savedKeys[currentSong.title] = currentKey;
+
+            localStorage.setItem("savedKeys", JSON.stringify(savedKeys));
+
             document.getElementById("key-selector").value = currentKey;
 
             if (displayMode === "chords") {
@@ -180,6 +248,10 @@ const keySelector = document.getElementById("key-selector");
 
 keySelector.addEventListener("change", () => {
     currentKey = keySelector.value;
+
+    savedKeys[currentSong.title] = currentKey;
+
+    localStorage.setItem("savedKeys", JSON.stringify(savedKeys));
 
     displaySections(currentSong);
 });
@@ -242,3 +314,29 @@ searchInput.addEventListener("input", () => {
 
     displaySongList(filteredSongs);
 });
+
+const pinButton = document.getElementById("pin-button");
+
+pinButton.addEventListener("click", () => {
+    const index = starredSongs.indexOf(currentSong.title);
+
+    if (index === -1) {
+        starredSongs.push(currentSong.title);
+    } else {
+        starredSongs.splice(index, 1);
+    }
+
+    localStorage.setItem("starredSongs", JSON.stringify(starredSongs));
+
+    updatePinButton();
+});
+
+function updatePinButton() {
+    const pinButton = document.getElementById("pin-button");
+
+    if (starredSongs.includes(currentSong.title)) {
+        pinButton.textContent = "Pinned";
+    } else {
+        pinButton.textContent = "Pin";
+    }
+}
