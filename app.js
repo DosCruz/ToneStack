@@ -282,6 +282,8 @@ const backButton = document.getElementById("back-button");
 backButton.addEventListener("click", () => {
     document.getElementById("song-viewer").hidden = true;
     document.getElementById("song-list").hidden = false;
+
+    displaySongList();
 });
 
 const displayToggle = document.getElementById("display-toggle");
