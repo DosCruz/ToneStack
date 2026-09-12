@@ -778,5 +778,21 @@
                 "key": "G"
             }
         ]
+    },
+
+    {
+        "title": "Oh Kay Saya",
+        "artist": "Camaraderie",
+        "key": "F",
+        "sections": [
+            {
+                "name": "Intro",
+                "progression": "1"
+            },
+            {
+                "name": "Whole Song",
+                "progression": "4 | 5 | 3m | 6m\n2m | 5 | 1 | 1"
+            }
+        ]
     }
 ]
