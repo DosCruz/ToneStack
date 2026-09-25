@@ -890,6 +890,10 @@
             {
                 "name": "Original Key",
                 "key": "A"
+            },
+            {
+                "name": "Yuen",
+                "key": "G"
             }
         ]
     },
@@ -916,6 +920,10 @@
             {
                 "name": "Original Key",
                 "key": "F#"
+            },
+            {
+                "name": "Chloe",
+                "key": "E"
             }
         ]
     },
@@ -954,6 +962,10 @@
             {
                 "name": "Ate Ria",
                 "key": "D#"
+            },
+            {
+                "name": "Chine",
+                "key": "D#"
             }
         ]
     },
@@ -988,6 +1000,52 @@
             {
                 "name": "Original Key",
                 "key": "D#"
+            },
+            {
+                "name": "Chine",
+                "key": "D"
+            }
+        ]
+    },
+
+    {
+        "title": "It Is Well",
+        "artist": "Bethel Music / Kristene Dimarco",
+        "key": "G",
+        "sections": [
+            {
+                "name": "Intro Verse",
+                "progression": "1 | 5 * 6m"
+            },
+            {
+                "name": "Chorus",
+                "progression": "4 - 5 | 6m x3\n5"
+            },
+            {
+                "name": "Bridge",
+                "progression": "1 - 5 | 6m - 4"
+            },
+            {
+                "name": "Outro",
+                "progression": "4 | 5 * 6m (repeat several times)\n4 | 5 - 6m\n4 | 5 - 1"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "G"
+            }
+        ]
+    }, 
+
+    {
+        "title": "I Am Free",
+        "artist": "Ross Parsley",
+        "key": "D",
+        "sections": [
+            {
+                "name": "Whole Song",
+                "progression": "1 | 1 | 4 | 4\n6m | 5 | 1 | 1"
             }
         ]
     }
