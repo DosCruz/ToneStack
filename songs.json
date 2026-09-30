@@ -1047,6 +1047,88 @@
                 "name": "Whole Song",
                 "progression": "1 | 1 | 4 | 4\n6m | 5 | 1 | 1"
             }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "D"
+            }
+        ]
+    },
+
+    {
+        "title": "Lilim",
+        "artist": "Victory Worship",
+        "key": "E",
+        "sections": [
+            {
+                "name": "Intro Verse",
+                "progression": "1 | 3m | 4 | 6m - 5"
+            },
+            {
+                "name": "Pre-Chorus",
+                "progression": "2m | 3m | 4 | 4\n2m | 3m | 4 | 5"
+            },
+            {
+                "name": "Chorus",
+                "progression": "1 | 3m | 4 | 6m - 5"
+            },
+            {
+                "name": "Interlude",
+                "progression": "1 | 6m - 4 x2"
+            },
+            {
+                "name": "Bridge",
+                "progression": "4 | 5 | 6m | 1/3\n4 | 5 | 6m | 7 (to Chorus)"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "E"
+            }
+        ]
+    },
+
+    {
+        "title": "Itatanghal",
+        "artist": "Spring Worship",
+        "key": "G",
+        "sections": [
+            {
+                "name": "Intro",
+                "progression": "1 | 3m | 1 | 3m"
+            },
+            {
+                "name": "Verse",
+                "progression": "1 | 3m | 4 4/3 - 4 - 5\n6m - 5/7 | 1 | 2m | 5"
+            },
+            {
+                "name": "Chorus",
+                "progression": "1 | 3m | 1 | 5m - 1\n4 | 5/4 | 1/3 | 5# * 6m\n2m | 5 | 1 (- 5 if back to Chorus)"
+            },
+            {
+                "name": "Instrumental",
+                "progression": "4 | 1/3 | 2m | 1\n4 | 1/3 | 2m | 5"
+            },
+            {
+                "name": "Bridge",
+                "progression": "4 | 1/3 - 6m | 2m | 5m - 1\n4 | 1/3 - 6m | 2m | 5 (- 6 to change key)"
+            },
+            {
+                "name": "Change Key Chorus",
+                "progression": "2 | 4#m | 2 | 6m - 2\n5 | 6 | 2/4# | 7m\n3m | 6 | 2 (- 6 if back to Chorus)"
+            },
+            {
+                "name": "Last Three",
+                "progression": "3m | 6 | 2 - 1#m7 - 7m7 x2\n3m 6"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "G"
+            }
         ]
     }
 ]
