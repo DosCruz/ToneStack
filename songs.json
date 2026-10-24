@@ -1448,5 +1448,81 @@
                 "key": "G"
             }
         ]
+    },
+
+    {
+        "title": "Wala Kang Katulad",
+        "artist": "Musikatha",
+        "key": "D",
+        "sections": [
+            {
+                "name": "Intro",
+                "progression": "1 - 1M7 | 5/4"
+            },
+            {
+                "name": "Verse",
+                "progression": "1 | 3m | 6m | 6m\n4M7 | 4M7 | 5 | 5"
+            },
+            {
+                "name": "Pre-Chorus",
+                "progression": "4M7 | 5/4 | 3m7 | 6m7\n2m7 | 2m7 | 5sus | 5"
+            },
+            {
+                "name": "Chorus",
+                "progression": "1 | 1M7 | 4M7 | 5\n1 | 1M7 | 4M7 | 5\n6 | 5# | 5 | 5♭\n4 | 5 | 1 ( 5 if going back to chorus )"
+            },
+            {
+                "name": "Last Three",
+                "progression": "2m7 | 1/3\n2 | 1/3 - 6\n2m7 | 5 | 1"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "D"
+            },
+            {
+                "name": "Kuya Ayne",
+                "key": "A"
+            },
+            {
+                "name": "Ate Jayne",
+                "key": "C"
+            }
+        ]
+    },
+
+    {
+        "title": "Nananabik",
+        "artist": "Just Worship",
+        "key": "B",
+        "sections": [
+            {
+                "name": "Intro Verse",
+                "progression": "1 | 1/3 | 4 | 1"
+            },
+            {
+                "name": "Pre-Chorus",
+                "progression": "6m7 | 4 | 6m7 | 4"
+            },
+            {
+                "name": "Chorus",
+                "progression": "1 | 4 | 6m7 | 4 x2\n2m | 3m - 4 x2"
+            },
+            {
+                "name": "Instrumental Bridge",
+                "progression": "4 | 5 | 6m | 3m ( 5  before chorus )"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "B"
+            },
+            {
+                "name": "Yanau",
+                "key": "G"
+            }
+        ]
     }
 ]
