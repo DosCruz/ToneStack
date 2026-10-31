@@ -797,6 +797,12 @@
                 "name": "Whole Song",
                 "progression": "4 | 5 | 3m | 6m\n2m | 5 | 1 | 1"
             }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "F"
+            }
         ]
     },
 
@@ -1522,6 +1528,134 @@
             {
                 "name": "Yanau",
                 "key": "G"
+            }
+        ]
+    },
+
+    {
+        "title": "Salamat, Salamat",
+        "artist": "Malayang Pilipino",
+        "key": "F",
+        "sections": [
+            {
+                "name": "Intro Verse",
+                "progression": "1 | 3m | 2 | 5"
+            },
+            {
+                "name": "Pre-Chorus",
+                "progression": "3m | 6m | 3m | 6m\n2m | 3m | 4 | 5"
+            },
+            {
+                "name": "Chorus",
+                "progression": "4 | 5 | 3m | 6m\n2m | 5 | 1 | 5 - 1 ( Riff )"
+            },
+            {
+                "name": "Bridge",
+                "progression": "4 | 1/3 | 4 | 5\n4 | 1/3 | 2m | 5"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "F"
+            }
+        ]
+    },
+
+    {
+        "title": "Sa Biyaya",
+        "artist": "Spring Worship",
+        "key": "C",
+        "sections": [
+            {
+                "name": "Intro",
+                "progression": "4 | 5 | 3m | 6m\n2m - 3m - 4 - 2/4# - 5"
+            },
+            {
+                "name": "Verse",
+                "progression": "1 | 4 | 3m - 6m | 2m - 5"
+            },
+            {
+                "name": "Chorus",
+                "progression": "4 - 5 | 3m - 6m\n2m - 5 | 1 - 17\n4 - 5 | 3m - 6m\n2m - 5 | 4 - 5"
+            },
+            {
+                "name": "Bridge",
+                "progression": "4 | 3m7 - 6m7\n2m | 3m | 4 ( to Chorus )"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "C"
+            }
+        ]
+    },
+
+    {
+        "title": "Washed",
+        "artist": "Elevation Rhythm",
+        "key": "B",
+        "sections": [
+            {
+                "name": "Intro",
+                "progression": "1/3 * 4 | 5 * 6m"
+            },
+            {
+                "name": "Verse",
+                "progression": "1/3 * 4 | 5 * 6m x3\n2m | 4"
+            },
+            {
+                "name": "Chorus",
+                "progression": "1 | 4 | 6m | 5"
+            },
+            {
+                "name": "Bridge",
+                "progression": "1 | 4 | 6m | 4"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "B"
+            }
+        ]
+    },
+
+    {
+        "title": "Thank You Jesus For The Blood",
+        "artist": "Charity Gayle",
+        "key": "B♭",
+        "sections": [
+            {
+                "name": "Intro",
+                "progression": "1 - 5/7 | 6m7 | 4 - 1/3 | 5"
+            },
+            {
+                "name": "Verse 1 Verse 2",
+                "progression": "1 * 5/7 | 6m7 | 4 - 1/3 | 5"
+            },
+            {
+                "name": "Chorus",
+                "progression": "1 * 5/7 * 1 * 1/3 | 4 - 1\n6m7 * 5/7 - 1 | 6m7 -  5\n6m7 * 5 * 4 * 1/3 | 4 * 5 - 6m\n4 - 1 | 5 - 1"
+            },
+            {
+                "name": "Interlude",
+                "progression": "1"
+            },
+            {
+                "name": "Verse 3",
+                "progression": "1 * 5/7 | 6m7 | 4 - 1/3 | 5\n1 * 5/7 | 6m7 | 4 - 1/3 | 1/5 - 5"
+            },
+            {
+                "name": "Bridge",
+                "progression": "4 | 5 | 6m | 3m7 x3\n4 | 5 | 6m | 5"
+            }
+        ],
+        "singerKeys": [
+            {
+                "name": "Original Key",
+                "key": "B♭"
             }
         ]
     }
